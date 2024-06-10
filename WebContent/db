@@ -1,0 +1,99 @@
+conn system/amlan
+
+create user blood identified by blood;
+
+grant dba to blood;
+
+conn blood/blood
+
+create table admin
+(
+  emailid varchar2(50),
+  password varchar2(50)
+);
+  
+insert into admin values('admin@gmail.com','admin');
+commit;
+
+create table bloodbank
+(
+	bankname varchar2(50),
+	emailid varchar2(40),
+	address varchar2(150),
+	contact varchar2(10)
+);
+
+create table users
+(
+	name varchar2(50),
+	age varchar2(50),
+	dateofbirth varchar2(50),
+	bloodgroup varchar2(50),
+	gender varchar2(50),
+	height varchar2(50),
+	weight varchar2(50),
+	patientid varchar2(50),
+	category varchar2(50),
+	maritalstatus varchar2(50),
+	pastmedicalissues varchar2(50),
+	lastdonationdate varchar2(50),
+	contactnumber varchar2(50),
+	emailid varchar2(50) primary key,
+	password varchar2(50),
+	photo varchar2(50),
+	address varchar2(50),
+	otp varchar2(10)
+);
+
+
+
+create table contact
+(
+	name varchar2(50),
+	email varchar2(50),
+	phone varchar2(50),
+	message varchar2(150)
+);
+
+create table camps
+(
+	name varchar2(50),
+	address varchar2(100),
+	datetiming varchar2(20)
+);
+
+create table doctors
+(
+	name varchar2(50),
+	email varchar2(50),
+	contactnumber varchar2(50),
+	qualification varchar2(100),
+	age varchar2(20),
+	gender varchar2(20),
+	address varchar2(150),
+	photo varchar2(50)
+);
+
+create table feedback
+(
+	name varchar2(20),
+	lastname varchar2(20),
+	phone varchar2(20),
+	email varchar2(50),
+	comments varchar2(100),
+	anymessage varchar2(150)
+);
+
+CREATE SEQUENCE lifeline
+MINVALUE 1
+START WITH 100001
+INCREMENT BY 1
+NOCACHE;
+
+
+select lifeline.NEXTVAL from dual;
+
+
+
+
+select * from users where emailid='dibyasha.das96@gmail.com' and password='12345';
