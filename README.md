@@ -29,7 +29,7 @@ Version Control	Git
 Follow these steps to set up the project locally:
 
 # 1️⃣ Clone this repository
-git clone https://github.com/Amlan7999/Blood-Bank.git
+git clone [https://github.com/Amlan7999/Blood-Bank.git](https://github.com/Amlan7999/Blood_Bank.git)
 
 # 2️⃣ Navigate to the project folder
 cd blood-bank-management
