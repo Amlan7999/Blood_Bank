@@ -68,7 +68,7 @@ Amlan Sarthak Singh
 📍 Bangalore, India
 💼 Aspiring Data Analyst | Tech Enthusiast
 
-📫 Reach me at: [your-amlamsingh11@gmail.com
+📫 Reach me at: amlamsingh11@gmail.com
 ]
 🌐 GitHub: github.com/Amlan7999
 
